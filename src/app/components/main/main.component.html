@@ -1,0 +1,38 @@
+<section class="what-we-do">
+    <div class="container-xl">
+        <div class="row">
+            <h1 class="what-we-do__title">What We Do</h1>
+            <h4 class="what-we-do__subtitle">
+                We launch different types of platforms and operating systems
+                using distinguishes of every platform or operating system as
+                adventage and a powerful tool.
+            </h4>
+        </div>
+    </div>
+</section>
+<section class="trinetix-services">
+    <div class="container-xl">
+        <div class="row trinetix-services__list">
+            <app-services
+                class="trinetix-services__item"
+                *ngFor="let servItem of services"
+                [service]="servItem"
+            >
+            </app-services>
+        </div>
+    </div>
+</section>
+<section class="contact-us" id="contact-us">
+    <div class="container-xl">
+        <div class="row">
+            <h2 class="contact-us__title">
+                We enjoy what we do. <br />
+                Working with smart people at great projects. Contact us if you
+                want to work with us.
+            </h2>
+            <a href="#" class="contact-us__link">
+                <span class="contact-us__span">Contact Us</span>
+            </a>
+        </div>
+    </div>
+</section>

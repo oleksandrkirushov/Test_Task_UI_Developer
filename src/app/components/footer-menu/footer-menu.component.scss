@@ -1,0 +1,30 @@
+@import "../../../assets/css/vars";
+
+.footer-menu {
+    font-size: $accent-font-size;
+    line-height: $accent-line-height;
+    text-transform: capitalize;
+
+    &__list {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 18px;
+        }
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: $inversColor;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $primaryColor;
+        }
+    }
+}
+
+

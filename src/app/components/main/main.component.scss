@@ -1,0 +1,96 @@
+@import "../../../assets/css/vars";
+.what-we-do {
+    border-bottom: 1px solid $divider;
+    padding: 56px 0 52px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -14.6px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg) skew(-10deg, -9deg);
+
+        width: 28px;
+        height: 28px;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        border-color: $divider;
+        background-color: $inversColor;
+    }
+
+    &__title {
+        font-family: $secondary-fonts;
+        font-size: $titleH1-font-size;
+        line-height: $titleH1-line-height;
+        text-align: center;
+        color: $cornflowerBlue;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: $titleH4-font-size;
+        line-height: $titleH4-line-height;
+        max-width: 1061px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.trinetix-services {
+    padding: 149px 0 0;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 563px;
+        padding-bottom: 26px;
+    }
+}
+
+.contact-us {
+    padding: 56px 0 60px;
+    border-top: 1px solid $divider;
+
+    &__wrapp {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: $secondary-fonts;
+        font-size: $titleH2-font-size;
+        line-height: $titleH2-line-height;
+        max-width: 978px;
+        margin: 0 auto 29px;
+        text-align: center;
+        color: $cornflowerBlue;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        margin: 0 auto;
+        text-decoration: none;
+        background-color: $primaryColor;
+        border-radius: 50px;
+        color: $inversColor;
+        padding: 6px 0 11px;
+        font-size: 24px;
+        line-height: 33px;
+
+        &:hover {
+            background-color: $secondaryColor;
+        }
+    }
+}

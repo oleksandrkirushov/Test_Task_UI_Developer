@@ -1,0 +1,79 @@
+@import "../../../assets/css/vars";
+
+.footer {
+    background-color: $secondaryColor;
+    color: $inversColor;
+    font-size: $accent-font-size;
+    line-height: $accent-line-height;
+
+    &__section {
+        border-top: 4px solid $primaryColor;
+        border-bottom: 1px solid $dividerHeader;
+        padding: 32px 0 26px;
+    }
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__address {
+        line-height: 30px;
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $inversColor;
+        font-size: 18px;
+        line-height: 24px;
+
+        &:hover > .footer__text {
+            color: $primaryColor;
+        }
+
+        &:hover > .footer__text_blue {
+            color: $inversColor;
+        }
+    }
+
+    &__text {
+        &_blue {
+            color: $primaryColor;
+        }
+    }
+
+    &__subsection {
+        padding-top: 31px;
+        padding-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: $MD) {
+    .app-footer-menu {
+        display: none;
+    }
+
+    .footer {
+        &__copyright {
+            width: 100%;
+            order: 2;
+            margin-top: 20px;
+        }
+
+        &__subsection {
+            padding-top: 20px;
+        }
+
+        &__address {
+            margin-bottom: 25px;
+        }
+        &__link {
+            font-size: 15px;
+            line-height: $accent-line-height;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "../../../assets/css/vars";
+
+.header {
+    background-color: $secondaryColor;
+
+    &__top {
+        padding: 14px 0 17px;
+        border-top: 4px solid $primaryColor;
+        border-bottom: 1px solid $dividerHeader;
+    }
+
+    &__middle {
+        padding: 48px 0 59px;
+        border-bottom: 1px solid $dividerHeader;
+    }
+    &__title {
+        font-family: $secondary-fonts;
+        font-size: $titleH2-font-size;
+        line-height: $titleH2-line-height;
+        color: $inversColor;
+    }
+}
+
+.app-sub-menu {
+    overflow: hidden;
+}
+
+@media screen and (max-width: $SM) {
+    .header {
+        &__middle {
+            display: none;
+        }
+    }
+}

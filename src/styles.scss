@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap.scss' ;
+// @import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+// @import '../node_modules/bootstrap/dist/css/bootstrap-grid.css';
+@import './assets/css/vars';
+@import './assets/css/mixin';
+// @import './assets/css/grids';
+@import './assets/css/fonts';
+@import './assets/css/normalize';
+@import './assets/css/typografy';

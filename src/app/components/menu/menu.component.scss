@@ -1,0 +1,140 @@
+@import "../../../assets/css/vars";
+.head-menu {
+    font-size: $nav-font-size;
+    font-weight: $nav-font-weight;
+    line-height: $nav-line-height;
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+        &:last-child {
+            margin-left: 15px;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 5px 14px 7px;
+        width: 100%;
+        text-decoration: none;
+        border: 1px solid transparent;
+        color: $inversColor;
+
+        &:hover {
+            border-color: $inversColor;
+            border-radius: 50px;
+        }
+        &:active,
+        &:focus {
+            color: $primaryColor;
+            border-color: transparent;
+        }
+    }
+    &__text {
+        text-transform: uppercase;
+    }
+    &__btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $MD) {
+    .head-menu {
+        &__list {
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: $secondaryColor;
+            visibility: hidden;
+            pointer-events: none;
+            padding: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            text-align: center;
+            box-shadow: -4px 0 20px $inversColor;
+            overflow-x: hidden;
+            padding-top: 50px;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+
+        &__btn {
+            display: block;
+            position: absolute;
+            top: 24px;
+            right: 14px;
+            z-index: 100;
+            width: 34px;
+            height: 22px;
+        }
+
+        &__line {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 20px;
+            }
+
+            &,
+            &::before,
+            &::after {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: $inversColor;
+            }
+        }
+        &__input:checked {
+            & ~ .head-menu__list {
+                display: flex;
+                visibility: visible;
+                pointer-events: all;
+                opacity: 1;
+                width: 300px;
+                transition: all 0.5s ease-in-out;
+                z-index: 1;
+            }
+
+            & ~ .head-menu__btn > span {
+                top: 13px;
+                visibility: hidden;
+            }
+
+            & ~ .head-menu__btn > span::before {
+                top: 0;
+                transform: rotate(-45deg);
+                visibility: visible;
+            }
+
+            & ~ .head-menu__btn > span::after {
+                top: 0;
+                transform: rotate(45deg);
+                visibility: visible;
+            }
+        }
+    }
+}

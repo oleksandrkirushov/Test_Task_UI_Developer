@@ -1,0 +1,59 @@
+@import "../../../assets/css/vars";
+
+.social {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $inversColor;
+        border-radius: 50%;
+        color: $inversColor;
+
+        &:hover {
+            color: $primaryColor;
+            border-color: $primaryColor;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+}
+
+@media screen and (max-width: $XL) {
+    .social {
+        &__list {
+            justify-content: space-between;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $MD) {
+    .social {
+        &__list {
+            justify-content: flex-start;
+        }
+
+               &__item {
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    
+}
