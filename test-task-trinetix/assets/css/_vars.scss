@@ -1,0 +1,69 @@
+//Polygraphy
+
+$default-fonts-name: "Open Sans";
+$follbak: Arial, Helvetica, sans-serif;
+$default-fonts: $default-fonts-name, $follbak;
+$default-font-size: 22px;
+$default-font-size-tablet: 20px;
+$default-font-size-mobile: 18px;
+$default-line-height: 1.54;
+
+$secondary-fonts-name: "PT Serif";
+$secondary-fonts: $secondary-fonts-name, $follbak;
+
+$nav-font-size: 14px;
+$nav-line-height: 1.36;
+$nav-font-weight: 700;
+
+$accent-font-size: 16px;
+$accent-line-height: 1.36;
+
+$titleH1-font-size: 54px;
+$titleH1-font-size-tablet:48px;
+$titleH1-font-size-mobile:34px;
+$titleH1-line-height: 1.325;
+
+
+$titleH2-font-size: 48px;
+$titleH2-line-height: 1.21;
+
+$titleH3-font-size: 36px;
+$titleH3-font-size-mobile: 28px;
+$titleH3-line-height: 1.325;
+
+$titleH4-font-size: 28px;
+$titleH4-font-size-tablet:24px;
+$titleH4-font-size-mobile:18px;
+$titleH4-line-height: 1.357;
+$titleH4-line-height-tablet: 1.58;
+
+$titleH5-font-size: 18px;
+$titleH5-line-height: 1.667;
+
+//Width
+$servicesBtn: 176px; // services link
+
+//Color
+
+$primaryColor: #00abff;
+$secondaryColor: #00172b;
+$textColor: #000000;
+$cornflowerBlue: #105788;
+$inversColor: #ffffff;
+$divider: #e1e1e1;
+$dividerHeader: rgba(0, 53, 98, 0.3);
+
+// Breakpoints
+
+$mobileMenu: 813px;
+$XL: 1200px;
+$LG: 1024px;
+$MD: 979px;
+$SM: 768px;
+
+$container-max-width: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px,
+);
