@@ -1,0 +1,44 @@
+@import "../../../assets/css/vars";
+
+.trinetix-services {
+    &__list,
+    &__col {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__col {
+        width: 50%;
+        margin-bottom: 56px;
+
+        &:last-child {
+            margin: 114px 0 32px;
+        }
+    }
+}
+
+@media screen and (max-width: $LG) {
+    .trinetix-services {
+        &__list {
+            padding: 0 10px;
+        }
+        &__col {
+            padding: 0 5px;
+        }
+    }
+}
+
+@media screen and (max-width: $SM) {
+    .trinetix-services {
+        &__col {
+            width: 100%;
+            margin-bottom: 77px;
+            padding: 0;
+
+            &:last-child {
+                margin: 0 0 32px;
+            }
+        }
+
+    }
+}

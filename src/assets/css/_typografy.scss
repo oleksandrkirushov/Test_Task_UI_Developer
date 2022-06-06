@@ -4,7 +4,61 @@
     line-height: $default-line-height;
     font-weight: 400;
 }
-.container-xl {
-    max-width: 1200px;
+
+h1,
+h2,
+h3 {
+    font-family: $secondary-fonts;
 }
 
+h1 {
+    font-size: $titleH1-font-size;
+    line-height: $titleH1-line-height;
+}
+
+h2 {
+    font-size: $titleH2-font-size;
+    line-height: $titleH2-line-height;
+}
+
+h3 {
+    font-size: $titleH3-font-size;
+    line-height: $titleH3-line-height;
+}
+
+h4 {
+    font-size: $titleH4-font-size;
+    line-height: $titleH4-line-height;
+}
+
+@media screen and (max-width: $LG) {
+    .page {
+        font-size: $default-font-size-tablet;
+    }
+
+    h1 {
+        font-size: $titleH1-font-size-tablet;
+    }
+
+    h4 {
+        font-size: $titleH4-font-size-tablet;
+        line-height: $titleH4-line-height-tablet;
+    }
+}
+
+@media screen and (max-width: $SM) {
+    .page {
+        font-size: $default-font-size-mobile;
+    }
+    h1 {
+        font-size: $titleH1-font-size-mobile;
+    }
+
+    h3 {
+        font-size: $titleH3-font-size-mobile;
+    }
+
+    h4 {
+        font-size: $titleH4-font-size-mobile;
+    }
+}

@@ -1,11 +1,10 @@
 @import "../../../assets/css/vars";
 
 .submenu {
-        padding: 11px 0 21px 21px;
-        margin-bottom: -21px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-       
+    padding: 6px 0 16px 21px;
+    margin-bottom: -21px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 
     &__list {
         display: flex;
@@ -13,6 +12,7 @@
         flex-wrap: nowrap;
         white-space: nowrap;
     }
+
     &__item {
         margin-right: 34px;
     }
@@ -37,7 +37,7 @@
         &::before {
             content: "";
             position: absolute;
-            bottom: -24px;
+            bottom: -19px;
             left: 50%;
             transform: translateX(-50%);
             height: 4px;
@@ -52,5 +52,11 @@
         font-weight: $nav-font-weight;
         line-height: $nav-line-height;
         text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: $LG) {
+    .submenu {
+        padding-top: 9px;
     }
 }

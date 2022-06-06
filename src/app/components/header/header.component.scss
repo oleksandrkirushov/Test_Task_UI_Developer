@@ -4,7 +4,7 @@
     background-color: $secondaryColor;
 
     &__top {
-        padding: 14px 0 17px;
+        padding: 14px 0 10px;
         border-top: 4px solid $primaryColor;
         border-bottom: 1px solid $dividerHeader;
     }
@@ -14,9 +14,6 @@
         border-bottom: 1px solid $dividerHeader;
     }
     &__title {
-        font-family: $secondary-fonts;
-        font-size: $titleH2-font-size;
-        line-height: $titleH2-line-height;
         color: $inversColor;
     }
 }
@@ -25,10 +22,31 @@
     overflow: hidden;
 }
 
+@media screen and (max-width: $LG) {
+    .header {
+        &__top,
+        &__bottom {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        &__middle {
+            padding: 56px 5px 51px;
+        }
+    }
+}
+
 @media screen and (max-width: $SM) {
     .header {
         &__middle {
             display: none;
+        }
+
+        &__top,
+        &__middle,
+        &__bottom {
+            padding-left: 0px;
+            padding-right: 0px;
         }
     }
 }

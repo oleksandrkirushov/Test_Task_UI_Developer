@@ -52,7 +52,7 @@
     }
 }
 
-@media screen and (max-width: $MD) {
+@media screen and (max-width: calc($MD)) {
     .app-footer-menu {
         display: none;
     }

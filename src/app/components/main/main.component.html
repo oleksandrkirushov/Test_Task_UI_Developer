@@ -12,14 +12,7 @@
 </section>
 <section class="trinetix-services">
     <div class="container-xl">
-        <div class="row trinetix-services__list">
-            <app-services
-                class="trinetix-services__item"
-                *ngFor="let servItem of services"
-                [service]="servItem"
-            >
-            </app-services>
-        </div>
+        <router-outlet></router-outlet>
     </div>
 </section>
 <section class="contact-us" id="contact-us">

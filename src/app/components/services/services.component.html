@@ -1,6 +1,28 @@
-<img class="trinetix-services__img" src="{{ service.picture }}" alt="" />
-<h3 class="trinetix-services__title">{{ service.name }}</h3>
-<p class="trinetix-services__description">{{ service.description }}</p>
-<a class="trinetix-services__link" href="{{ service.linkUrl }}">
-    <span>Learn More</span>
-</a>
+<div class="trinetix-services__item">
+    <a
+        class="trinetix-services__link trinetix-services__link_width"
+        routerLink="{{ service.linkUrl }}"
+    >
+        <img
+            class="trinetix-services__img"
+            src="{{ service.picture }}"
+            alt="{{ service.name }}"
+        />
+    </a>
+    <h3 class="trinetix-services__title">
+        <a
+            class="trinetix-services__link trinetix-services__link_black"
+            routerLink="{{ service.linkUrl }}"
+        >
+            {{ service.name }}
+        </a>
+    </h3>
+
+    <p class="trinetix-services__description">{{ service.description }}</p>
+    <a
+        class="trinetix-services__link trinetix-services__btn"
+        routerLink="{{ service.linkUrl }}"
+    >
+        <span>Learn More</span>
+    </a>
+</div>

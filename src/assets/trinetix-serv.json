@@ -5,21 +5,21 @@
       "name": "Mobile Apps",
       "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.",
       "picture": "assets/images/img_mobil-apps.png",
-      "linkUrl": "http://www.contoso.com/help"
+      "linkUrl": "/mobile-app"
     },
     {
       "id": 2,
       "name": "Web Services",
       "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.",
       "picture": "assets/images/img_wev-services.png",
-      "linkUrl": "http://www.contoso.com/help"
+      "linkUrl": "web-services"
     },
     {
       "id": 3,
       "name": "Augmented Reality",
       "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.",
       "picture": "assets/images/img_augmented-reality.png",
-      "linkUrl": "http://www.contoso.com/help"
+      "linkUrl": "/augmented-reality"
     },
     {
       "id": 4,

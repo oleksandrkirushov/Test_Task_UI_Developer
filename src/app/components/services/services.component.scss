@@ -1,20 +1,78 @@
 @import "../../../assets/css/vars";
 
 .trinetix-services {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 26px;
+    }
+
     &__img {
         display: block;
-        margin: 0 auto;
-        width: 71.667%;
+        width: 100%;
     }
+
     &__title {
-        font-family: $secondary-fonts;
-        font-size: $titleH3-font-size;
-        line-height: $titleH3-line-height;
         color: $primaryColor;
         text-align: center;
-        margin: 3px 0 6px;
-
+        margin: 3px 0 4px;
     }
-    &__description{
-    text-align: center;}
+
+    &__description {
+        text-align: center;
+        margin-bottom: 11px;
+    }
+
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        text-decoration: none;
+        color: inherit;
+
+        &_black:hover {
+            color: $cornflowerBlue;
+        }
+    }
+
+    &__btn {
+        width: $servicesBtn;
+        font-size: $accent-font-size;
+        line-height: $accent-line-height;
+        border: 1px solid $primaryColor;
+        border-radius: 50px;
+        padding: 4px 0 6px;
+        color: $primaryColor;
+
+        &:hover {
+            border-color: $cornflowerBlue;
+            color: $cornflowerBlue;
+        }
+    }
+}
+
+@media screen and (max-width: $LG) {
+    .trinetix-services {
+        &__img {
+            width: 82%;
+        }
+
+        &__title {
+            color: $primaryColor;
+            text-align: center;
+            margin: 28px 0 5px;
+        }
+    }
+}
+
+@media screen and (max-width: $SM) {
+    .trinetix-services {
+        &__item {
+            padding-bottom: 0;
+        }
+        &__description {
+            margin-bottom: 25px;
+        }
+    }
 }

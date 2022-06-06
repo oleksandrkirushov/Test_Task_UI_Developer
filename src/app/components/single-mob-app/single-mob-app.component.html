@@ -1,0 +1,31 @@
+<div class="trinetix-services__item">
+    <a
+        class="trinetix-services__link trinetix-services__link_width"
+        href="{{ mobApp.url }}"
+        target="_blank"
+    >
+        <img
+            class="trinetix-services__img"
+            src="{{ mobApp.images.original.webp }}"
+            alt="{{ mobApp.title }}"
+        />
+    </a>
+    <h3 class="trinetix-services__title">
+        <a
+            class="trinetix-services__link trinetix-services__link_black"
+            href="{{ mobApp.url }}"
+        >
+            {{ mobApp.title }}
+        </a>
+    </h3>
+
+    <p class="trinetix-services__description">
+        {{ "Import date: " + mobApp.import_datetime }}
+    </p>
+    <a
+        class="trinetix-services__link trinetix-services__btn"
+        href="{{ mobApp.url }}"
+    >
+        <span>View More</span>
+    </a>
+</div>

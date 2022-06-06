@@ -108,6 +108,7 @@
                 background-color: $inversColor;
             }
         }
+
         &__input:checked {
             & ~ .head-menu__list {
                 display: flex;

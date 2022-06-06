@@ -20,40 +20,21 @@
     }
 
     &__title {
-        font-family: $secondary-fonts;
-        font-size: $titleH1-font-size;
-        line-height: $titleH1-line-height;
         text-align: center;
         color: $cornflowerBlue;
         margin-bottom: 10px;
     }
     &__subtitle {
         font-weight: 400;
-        font-size: $titleH4-font-size;
-        line-height: $titleH4-line-height;
-        max-width: 1061px;
+        max-width: 1091px;
         margin: 0 auto;
         text-align: center;
-        padding: 0;
+        // padding: 0;
     }
 }
 
 .trinetix-services {
-    padding: 149px 0 0;
-
-    &__list {
-        display: flex;
-        justify-content: center;
-    }
-
-    &__item {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 563px;
-        padding-bottom: 26px;
-    }
+    padding: 150px 0 0;
 }
 
 .contact-us {
@@ -66,9 +47,6 @@
     }
 
     &__title {
-        font-family: $secondary-fonts;
-        font-size: $titleH2-font-size;
-        line-height: $titleH2-line-height;
         max-width: 978px;
         margin: 0 auto 29px;
         text-align: center;
@@ -91,6 +69,44 @@
 
         &:hover {
             background-color: $secondaryColor;
+        }
+    }
+}
+
+@media screen and (max-width: $LG) {
+    .what-we-do {
+        &__title {
+            margin-bottom: 15px;
+        }
+    }
+    .trinetix-services {
+        padding: 107px 0 0;
+    }
+    .contact-us {
+        &__title {
+            max-width: 749px;
+        }
+    }
+}
+
+@media screen and (max-width: $MD) {
+    .trinetix-services {
+        padding: 60px 0 0;
+    }
+
+    .what-we-do {
+        padding: 42px 0 28px;
+    }
+}
+
+@media screen and (max-width: $SM) {
+    .trinetix-services {
+        padding: 69px 0 0;
+    }
+    .contact-us {
+        &__title {
+            font-size: 20px;
+            line-height: 1.5;
         }
     }
 }
